@@ -29,9 +29,10 @@ declare module Request {
     (options: IRequestOptions, callback?: Function): IResult;
     (url: string, callback?: Function): IResult;
     get(options: IRequestOptions, callback?: Function): IResult;
+    get(url: string, options: IRequestOptions, callback?: Function): IResult;
     get(url: string, callback?: Function): IResult;
     put(options: IRequestOptions, callback?: Function): IResult;
-    put(url: string, callback?: Function): IResult;
+    put(url: string, options: IRequestOptions, callback?: Function): IResult;
     post(options: IRequestOptions, callback?: Function): IResult;
     post(url: string, options: IRequestOptions, callback?: Function): IResult;
     del(options: IRequestOptions, callback?: Function): IResult;
